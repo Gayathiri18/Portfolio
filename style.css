@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    font-family:Arial;
+    line-height:1.6;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+
+
+/* HERO SECTION */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    padding:50px;
+}
+
+
+/* IMAGE */
+
+.hero-image img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:50%;
+    border:3px solid #38bdf8;
+    box-shadow:0 0 30px #38bdf8;
+}
+
+
+/* CONTENT */
+
+.hero-content{
+    max-width:500px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+.hero-content button{
+    padding:12px 25px;
+    border:none;
+    background:#38bdf8;
+    color:black;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.hero-content button:hover{
+    transform:scale(1.05);
+}
+
+
+
+/* GENERAL SECTIONS */
+
+section{
+    padding:100px 60px;
+}
+
+h2{
+    font-size:40px;
+    margin-bottom:30px;
+    color:#38bdf8;
+}
+
+
+
+/* PROJECT CARDS */
+
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+
+
+/* PUBLICATIONS */
+
+.paper{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+
+
+/* CONTACT */
+
+.contact p{
+    font-size:20px;
+}
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-image img{
+        width:250px;
+        height:250px;
+    }
+
+    section{
+        padding:80px 30px;
+    }
+}
